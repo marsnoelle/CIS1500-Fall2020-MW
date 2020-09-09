@@ -1,21 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package chapter2;
 
-/**
- *
- * @author EricC
- */
 public class Chapter2 {
 
-    /**
-     * @param args the command line arguments
-     */
+    // comments are ignored by the compiler
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println("Happy Wednesday!");
+        System.out.println("Let's learn about Java!");
+        System.out.println("Programming is so much \"fun\"");
+        System.out.print("Here's a print command\n");
+        System.out.print("Here's another one!");
     }
     
 }
