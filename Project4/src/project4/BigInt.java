@@ -207,8 +207,16 @@ public class BigInt {
     @Override
     public String toString() {
         String toReturn = negative ? "-" : "";
-        for (Integer i : nums) {
-            toReturn += i.toString();
+        List<String> list = new ArrayList<>();
+        for (int i = this.getNums().size() - 1; i >=0; i--) {
+            list.add(this.getNums().get(i).toString());
+            if ((i - 1)  % 3 == 0) {
+                list.add(",");
+            }
+        }
+        Collections.reverse(list);
+        for (String s : list) {
+            toReturn += s;
         }
         return toReturn;
     }
